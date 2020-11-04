@@ -61,6 +61,7 @@ let invertSentence = function (sentence) {
 //Exercice 13 : Chercher si dans la chaîne de caractère se trouve "La Manu".
 let searchInSentence = function (sentence) {
   return (sentence.search("La Manu") != -1) ? true : false;
+  // return sentence.includes("La Manue");
 }
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
@@ -71,11 +72,17 @@ let displayAbsoluteValue = function (number) {
 //Exercice 15 : Afficher les valeurs absolues de plusieurs nombres.
 let displayAbsoluteValues = function (numbersArray) {
   return numbersArray.map(n => Math.abs(n));
+
+  // let resultArray = numbersArray.map(Math.abs);
+  // return resultArray;
+
+  // return numbersArray.map(Math.abs);
 }
 
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
 let calculateArea = function (radius) {
   return Math.ceil(Math.PI * radius * radius);
+  // return Math.ceil(Math.PI * (Math.pow(radius, 2)));
 }
 
 //Exercice 17 : Calculer l'hypothènuse d\'un triangle rectangle. Arrondir à l'entier inférieur.
